@@ -1,0 +1,8 @@
+trash/
+**/*.pdf
+**/*.png
+**/*.root
+**/*.npy
+**/*.txt
+**/.ipynb_checkpoints/
+**/*output*
