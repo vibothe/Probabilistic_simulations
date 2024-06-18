@@ -43,7 +43,7 @@ def birthday_problem_simulation(num_people, num_simulations):
 
 # Parameters
 num_people_list = list(range(1, 101))  # Number of people from 1 to 100
-num_simulations = 1000  # Number of simulations per number of people
+num_simulations = 10000  # Number of simulations per number of people
 
 
 # In[12]:
@@ -58,7 +58,7 @@ probabilities = [birthday_problem_simulation(num_people, num_simulations) for nu
 
 
 # Visualization
-plt.figure(figsize=(10, 6))
+fig=plt.figure(figsize=(10, 6))
 plt.plot(num_people_list, probabilities, marker='o', linestyle='-', color='b', label='Simulation Results')
 plt.axhline(y=0.5, color='r', linestyle='--', label='50% Probability')
 plt.title('Birthday Problem: Probability of atleast one shared Birthday')
@@ -70,7 +70,7 @@ plt.grid(True)
 plt.legend()
 plt.tight_layout()
 plt.show()
-
+fig.savefig("prob_shared_birthday_vs_group_size.pdf",dpi=300, bbox_inches='tight')
 
 # In[ ]:
 
