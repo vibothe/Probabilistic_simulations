@@ -1,10 +1,10 @@
-#Probability Simulations
+# Probability Simulations
 Exploring probabilistic scenarios through simulations to create visualizations and gain better intuition for counterintuitive results. Some of these problems are commonly discussed in probability theory, while others arise in interviews or real-world applications.
 
-##Simulated Scenarios
-Birthday Paradox – It’s not really a paradox, but it’s still surprising how few people you need for a shared birthday to be likely.
+## Simulated Scenarios
+### Birthday Paradox – It’s not really a paradox, but it’s still surprising how few people you need for a shared birthday to be likely.
 
-Amoeba Extinction Process – Inspired by an online problem (reportedly from JP Morgan), this simulation models population evolution and extinction dynamics of amoebas.
+### Amoeba population - stochastic evolution – Inspired by an online problem (reportedly from JP Morgan), this simulation models population evolution and extinction dynamics of amoebas in a pond.
 
 (More to come!)
 
