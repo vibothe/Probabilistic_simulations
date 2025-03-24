@@ -1,21 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[9]:
-
-
 #Code to simulate birthday paradox problem and visualize insights
-
-
-# In[ ]:
-
 
 import random
 import numpy as np
 import matplotlib.pyplot as plt
-
-
-# In[10]:
 
 
 def birthday_problem_simulation(num_people, num_simulations):
