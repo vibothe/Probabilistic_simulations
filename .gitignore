@@ -6,3 +6,4 @@ trash/
 **/*.txt
 **/.ipynb_checkpoints/
 **/*output*
+!stochastic_amoeba/*png
