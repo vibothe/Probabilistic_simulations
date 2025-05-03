@@ -78,6 +78,8 @@ for i in range(len(patches)):
         fraction = height * 100 / num_simulations  
         plt.text(bins[i], height + 0.5, f'{fraction:.2f}%', ha='center', va='bottom', fontsize=10)
 
+plt.text(10, num_simulations/4, f'Overall Extinction Probability: {extinction_probability:.2%}', ha='right', va='top', fontsize=10,
+         fontweight='bold',bbox=dict(facecolor='white', edgecolor='gray', boxstyle='round,pad=0.3'))
 plt.xlabel('Extinction Time (Minutes)')
 plt.ylabel('Frequency')
 plt.title('Extinction Frequency as a Function of Time')
