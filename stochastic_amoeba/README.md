@@ -17,7 +17,7 @@ Each offspring behaves independently and follows the same set of probabilistic r
 
 The question is:
 
-What is the probability that this population eventually dies out?
+**What is the probability that this population eventually dies out?**
 
 We simulate the evolution of an amoeba population where each amoeba independently undergoes one of four actions at each discrete time step. The simulation starts with a single amoeba and proceeds step by step. If the population ever drops to zero, extinction occurs. If it survives for a maximum number of steps or grows beyond a specified threshold, the simulation halts early. 
 
@@ -32,10 +32,11 @@ We simulate the evolution of an amoeba population where each amoeba independentl
 - **Early Termination Heuristic**: Simulations are stopped early if population exceeds a threshold (e.g., 25), assuming extinction is highly unlikely beyond that point.
 - **Exported Visuals**: Automatically saves plots for further inspection or reporting.
 
-## ��� Example Outputs
+## Spoiler Alert: Visualization
 
 - Histogram of extinction times with percentage labels per time bin.
-- Time series plots of individual sample runs with extinction threshold line.
+- Time series plots of individu
+al sample runs with extinction threshold line.
 
 <p align="center">
   <img src="extinctions_over_time.png" width="400" />
