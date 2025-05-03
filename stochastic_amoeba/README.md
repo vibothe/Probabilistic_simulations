@@ -26,17 +26,17 @@ We simulate the evolution of an amoeba population where each amoeba independentl
 ## Key Features and assumptions
 
 - **Extinction Probability Estimation**: Estimates the likelihood of extinction across many simulation runs.
-- **Extinction Time Histogram**: Visualizes the distribution of time steps at which extinction occurs.
-- **Population Evolution Traces**: Tracks and plots the evolution of amoeba population over time in individual sample runs.
-- **Log-scale Visualization**: Population plots use a log-scale to better capture exponential growth patterns.
 - **Early Termination Heuristic**: Simulations are stopped early if population exceeds a threshold (e.g., 25), assuming extinction is highly unlikely beyond that point.
-- **Exported Visuals**: Automatically saves plots for further inspection or reporting.
+- **Extinction Time Histogram**: Visualizes the distribution of extinction instances as a function of time step.
+- **Population Evolution Traces**: Tracks and plots the evolution of amoeba population over time in individual sample runs.
+- **Log-scale Visualization**: Population plots use a log-scale to better capture exponential growth patterns. Added a constant (+1) to the population values to avoid undefined log(0) instance.
 
-## Spoiler Alert: Visualization
+
+
+## Visualizations
 
 - Histogram of extinction times with percentage labels per time bin.
-- Time series plots of individu
-al sample runs with extinction threshold line.
+- Time series plots of individual sample runs with extinction threshold line.
 
 <p align="center">
   <img src="extinctions_over_time.png" width="400" />
@@ -55,7 +55,7 @@ p_double = 0.25
 p_triple = 0.25
 
 # Simulation controls
-max_steps = 100         # Max number of time steps
-population_threshold = 25  # Early stop threshold for large population to conserve computing resources and time
-num_simulations = 100000     # Number of trials
+max_steps = 100         # Max number of time steps for each simulation trial
+population_threshold = 25  # Early stop threshold for large population to conserve compute time
+num_simulations = 100000     # Number of trials 
 
